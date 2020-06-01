@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C419088D24857A9F00FD090D /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419088C24857A9F00FD090D /* UpdateList.swift */; };
 		C4613DB9247187DC000368E8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4613DB8247187DC000368E8 /* MenuView.swift */; };
 		C4613DBB24719157000368E8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4613DBA24719157000368E8 /* Home.swift */; };
 		C4613DBD24719CF6000368E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4613DBC24719CF6000368E8 /* HomeView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C419088C24857A9F00FD090D /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		C4613DB8247187DC000368E8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		C4613DBA24719157000368E8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C4613DBC24719CF6000368E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				C4613DBA24719157000368E8 /* Home.swift */,
 				C4613DBC24719CF6000368E8 /* HomeView.swift */,
 				C4613DB8247187DC000368E8 /* MenuView.swift */,
+				C419088C24857A9F00FD090D /* UpdateList.swift */,
 				C4C96E82247151CE00602EB4 /* Assets.xcassets */,
 				C4C96E87247151CE00602EB4 /* LaunchScreen.storyboard */,
 				C4C96E8A247151CE00602EB4 /* Info.plist */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C96E7D247151C700602EB4 /* AppDelegate.swift in Sources */,
+				C419088D24857A9F00FD090D /* UpdateList.swift in Sources */,
 				C4613DB9247187DC000368E8 /* MenuView.swift in Sources */,
 				C4613DBB24719157000368E8 /* Home.swift in Sources */,
 				C4613DBD24719CF6000368E8 /* HomeView.swift in Sources */,
