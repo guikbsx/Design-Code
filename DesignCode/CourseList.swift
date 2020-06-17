@@ -11,6 +11,7 @@ import SwiftUI
 struct CourseList: View {
     @State var courses = courseData
     @State var active = false
+    @State var activeIndex = -1
     var body: some View {
         ZStack {
             Color.black.opacity(active ? 0.5: 0)
@@ -26,8 +27,17 @@ struct CourseList: View {
                         .blur(radius: active ? 20 : 0)
                     ForEach(courses.indices, id: \.self) { index in
                         GeometryReader { geometry in
-                            CourseView(show: self.$courses[index].show, course: self.courses[index], active: self.$active)
+                            CourseView(
+                                show: self.$courses[index].show,
+                                course: self.courses[index],
+                                active: self.$active,
+                                index: index,
+                                activeIndex: self.$activeIndex
+                            )
                                 .offset(y: self.courses[index].show ? -geometry.frame(in: .global).minY : 0)
+                                .opacity(self.activeIndex != index && self.active ? 0 : 1)
+                                .scaleEffect(self.activeIndex != index && self.active ? 0.5 : 1 )
+                                .offset(x: self.activeIndex != index && self.active ? screen.width : 0)
                         }
                         .frame(height: 280)
                         .frame(maxWidth: self.courses[index].show ? .infinity : screen.width - 60)
@@ -53,6 +63,8 @@ struct CourseView: View {
     @Binding var show: Bool
     var course: Course
     @Binding var active: Bool
+    var index: Int
+    @Binding var activeIndex: Int
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -113,6 +125,11 @@ struct CourseView: View {
             .onTapGesture {
                 self.show.toggle()
                 self.active.toggle()
+                if self.show {
+                    self.activeIndex = self.index
+                } else {
+                    self.activeIndex = -1
+                }
             }
         }
         .frame(height: show ? screen.height : 280)
