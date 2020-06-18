@@ -45,6 +45,7 @@
 		C4C96E83247151CE00602EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C96E82247151CE00602EB4 /* Assets.xcassets */; };
 		C4C96E86247151CE00602EB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C96E85247151CE00602EB4 /* Preview Assets.xcassets */; };
 		C4C96E89247151CE00602EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C96E87247151CE00602EB4 /* LaunchScreen.storyboard */; };
+		C4E8C22C249B93D7009EFC52 /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8C22B249B93D7009EFC52 /* CourseDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		C4C96E85247151CE00602EB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4C96E88247151CE00602EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4C96E8A247151CE00602EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E8C22B249B93D7009EFC52 /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				C4613DBA24719157000368E8 /* Home.swift */,
 				C4613DBC24719CF6000368E8 /* HomeView.swift */,
 				C49E890724914785003B8BB3 /* CourseList.swift */,
+				C4E8C22B249B93D7009EFC52 /* CourseDetail.swift */,
 				C4613DB8247187DC000368E8 /* MenuView.swift */,
 				C419088C24857A9F00FD090D /* UpdateList.swift */,
 				C4B3E76324869FEA003F6A3D /* UpdateStore.swift */,
@@ -291,6 +294,7 @@
 				C4613DBD24719CF6000368E8 /* HomeView.swift in Sources */,
 				C4C96E7F247151C700602EB4 /* SceneDelegate.swift in Sources */,
 				C4C96E81247151C700602EB4 /* ContentView.swift in Sources */,
+				C4E8C22C249B93D7009EFC52 /* CourseDetail.swift in Sources */,
 				C4B3E7662486A4A9003F6A3D /* TabBar.swift in Sources */,
 				C49E890824914785003B8BB3 /* CourseList.swift in Sources */,
 			);
